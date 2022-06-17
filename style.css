@@ -1,0 +1,55 @@
+
+/* styling the main body*/
+*{
+    color: rgb(7, 1, 5);
+    background: rgb(7, 700, 300);
+    font-family: sans-serif;
+}
+
+#cityInput{ 
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background: honeydew;
+    border-radius: 25px;
+    
+    
+}
+
+#cityName{
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#cityContainer{
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button{
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 25px;
+    background: rgb(152, 179, 152);
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: azure;
+
+}
+
+
