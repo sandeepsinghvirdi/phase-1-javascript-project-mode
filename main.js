@@ -10,7 +10,13 @@ fetch("http://api.openweathermap.org/data/2.5/forecast?q='+newName.value+'&appid
         for(i=0; i<5; i++){
             document.getElementById("day" +(i+1)+"Min").innerHTML = "Min:" +Number(data.list[i].main.temp_min -288.53).toFixed(1)+"°";     
           }
-          for(i=0; i<5; i++){
-            document.getElementById("day" +(i+1)+"Max").innerHTML = "Min:" +Number(data.list[i].main.temp_max -288.53).toFixed(1)+"°";
+        for(i=0; i<5; i++){
+            document.getElementById("day" +(i+1)+"Max").innerHTML = "Max:" +Number(data.list[i].main.temp_max -288.53).toFixed(1)+"°";
           }
+        
+        for(i=0; i<5; i++){
+            document.getElementById("img" +(i++)).src = "http://openweathermap.org/img/wn/" +data.list[i].weather[0].icon+".png";
+        }
+
+
     } )
