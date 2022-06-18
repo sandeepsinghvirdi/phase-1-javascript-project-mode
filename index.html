@@ -9,19 +9,20 @@
         <link rel="stylesheet" href="style.css">
       
     </head>
-    <body>
+
+    <body onload="defaultScreen()">
         <center>
             <h1 id="Para1"> 5 DAYS WEATHER FORECAST </h1>
             <p id="inputContainer">City: <input type="text"  id="cityInput" placeholder="Enter city name"></p>
             <button onclick="getInfo()">Click Me</button>
-            <h2 id="cityName">--Melbourne--</h2>
+            <h2 id="cityName">----</h2>
         </center>
 
         <div id="weatherContainer">
              <div id="iconsContainer">
                  <div class="icons">
                      <p class="weather" id="day1"></p>
-                     <div class="image"><img src="" class="imgClass" id="img1" alt=""></div>
+                     <div class="image"><img src="" class="imgClass" id="img1" alt="Loading.."></div>
                      <p class="minValue" id="day1Min"></p>
                      <p class="maxValue" id="day1Max"></p>
 
@@ -29,7 +30,7 @@
 
                  <div class="icons">
                     <p class="weather" id="day2"></p>
-                    <div class="image"><img src="" class="imgClass" id="img2" alt=""></div>
+                    <div class="image"><img src="" class="imgClass" id="img2" alt="Loading.."></div>
                     <p class="minValue" id="day2Min"></p>
                     <p class="maxValue" id="day2Max"></p>
 
@@ -37,7 +38,7 @@
 
                 <div class="icons">
                     <p class="weather" id="day3"></p>
-                    <div class="image"><img src="" class="imgClass" id="img3" alt=""></div>
+                    <div class="image"><img src="" class="imgClass" id="img3" alt="Loading.."></div>
                     <p class="minValue" id="day3Min"></p>
                     <p class="maxValue" id="day3Max"></p>
 
@@ -45,7 +46,7 @@
 
                 <div class="icons">
                     <p class="weather" id="day4"></p>
-                    <div class="image"><img src="" class="imgClass" id="img4" alt=""></div>
+                    <div class="image"><img src="" class="imgClass" id="img4" alt="Loading.."></div>
                     <p class="minValue" id="day4Min"></p>
                     <p class="maxValue" id="day4Max"></p>
 
@@ -53,26 +54,17 @@
 
                 <div class="icons">
                     <p class="weather" id="day5"></p>
-                    <div class="image"><img src="" class="imgClass" id="img5" alt=""></div>
+                    <div class="image"><img src="" class="imgClass" id="img5" alt="Loading.."></div>
                     <p class="minValue" id="day5Min"></p>
                     <p class="maxValue" id="day5Max"></p>
 
                 </div>
              </div>
-
         </div>
        
         <script src="main.js"></script>
-    </body>    
-
-
-
-
-
+    </body>  
 
     </head>
-
-
-
 
 </html>

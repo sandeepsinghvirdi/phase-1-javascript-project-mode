@@ -45,6 +45,7 @@ button{
 
 }
 
+
 button:hover{
     background-color: azure;
 }
@@ -106,7 +107,6 @@ button:hover{
 .minValue{
     text-align: center;
     display: inline-block;
-    border-radius: 5px;
     height: 25px;
     width: 85px;
     margin: 0;
@@ -117,7 +117,6 @@ button:hover{
 .maxValue{
     text-align: center;
     display: inline-block;
-    border-radius: 5px;
     height: 25px;
     width: 85px;
     margin: 0;

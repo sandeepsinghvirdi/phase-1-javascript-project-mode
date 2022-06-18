@@ -15,13 +15,18 @@ function getInfo(){
           }
         
         for(i=0; i<5; i++){
-            document.getElementById("img" +(i+1)).src = 'https://openweathermap.org/img/wn/' +data.list[i].weather[0].icon+".png";
+            document.getElementById("img" +(i+1)).src = "https://openweathermap.org/img/wn/" +data.list[i].weather[0].icon+".png";
         }
     } )
 
 .catch(err => alert("Something went wrong"));
-
 }
+
+function defaultScreen(){
+    document.getElementById("cityInput").defaultValue = "Melbourne";
+    getInfo();
+}
+
 
 const d = new Date();
 const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
