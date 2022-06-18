@@ -13,9 +13,7 @@
     font-size: 20px;
     font-weight: bold;
     background: honeydew;
-    border-radius: 25px;
-    
-    
+    border-radius: 25px;  
 }
 
 #cityName{
@@ -49,7 +47,80 @@ button{
 
 button:hover{
     background-color: azure;
+}
+
+#weatherContainer{
+    position: absolute;
+    background-color:bisque;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 1270px;
+    border: 5px solid rgb(97, 95, 95);
+    border-radius: 13px;
+}
+
+#iconsContainer{
+    position: absolute;
+    background-color: aquamarine;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 240px;
+    width: 1200px;
+    border: 5px solid rgb(97, 95, 95);
+    border-radius: 13px;
+}
+
+.icons{
+    display: inline;
+    float: left;
+    height: 200px;
+    width: 190px;
+    margin: 20px;
+    border: 5px solid rgb(48, 47, 47);
+    border-radius: 13px;
+}
+
+.image{
+    height: 140px;
+    width: 100%;
 
 }
 
+.imgClass{
+    height: 140px;
+    width: 100%;
+}
 
+.weather{
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.minValue{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.maxValue{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
