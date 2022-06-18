@@ -1,10 +1,10 @@
+
 function getInfo(){
     const newName = document.getElementById("cityInput");
     const cityName = document.getElementById("cityName");
     cityName.innerHTML = "--"+newName.value+"--";
-}
 
-fetch("http://api.openweathermap.org/data/2.5/forecast?q='+newName.value+'&appid=399742cdcb44f520879454415508fa74")
+    fetch('https://api.openweathermap.org/data/2.5/forecast?q='+newName.value+'&appid=399742cdcb44f520879454415508fa74')
     .then(response => response.json())
     .then(data =>{
         for(i=0; i<5; i++){
@@ -15,8 +15,28 @@ fetch("http://api.openweathermap.org/data/2.5/forecast?q='+newName.value+'&appid
           }
         
         for(i=0; i<5; i++){
-            document.getElementById("img" +(i++)).src = "http://openweathermap.org/img/wn/" +data.list[i].weather[0].icon+".png";
+            document.getElementById("img" +(i+1)).src = 'https://openweathermap.org/img/wn/' +data.list[i].weather[0].icon+".png";
         }
-
-
     } )
+
+.catch(err => alert("Something went wrong"));
+
+}
+
+const d = new Date();
+const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+function checkDay(day){
+
+    if(day +d.getDay() > 6){
+        return day +d.getDay()-7;
+    }
+    else{
+        return day +d.getDay();
+    }
+}
+
+for(i=0; i<5; i++){
+    document.getElementById("day"+(i+1)).innerHTML =weekday[checkDay(i)];
+}
+
