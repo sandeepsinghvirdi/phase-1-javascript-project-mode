@@ -7,29 +7,29 @@
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <title>5 Days Weather Forecast</title>
         <link rel="stylesheet" href="style.css">
-        <script src="main.js"></script>
+      
     </head>
     <body>
         <center>
             <h1 id="Para1"> 5 DAYS WEATHER FORECAST </h1>
             <p id="inputContainer">City: <input type="text"  id="cityInput" placeholder="Enter city name"></p>
             <button onclick="getInfo()">Click Me</button>
-            <h2 id="cityName">--London--</h2>
+            <h2 id="cityName">--Melbourne--</h2>
         </center>
 
         <div id="weatherContainer">
              <div id="iconsContainer">
                  <div class="icons">
                      <p class="weather" id="day1"></p>
-                     <div class="image"><img src="" class="imgClass" id="img1" alt=""></div>
-                     <p class="minValue" id="day1Min">Loading.....</p>
-                     <p class="maxValue" id="day1Max">Loading.....</p>
+                     <div class="image"><img src=${data.weather.icon} class="imgClass" id="img1" alt=""></div>
+                     <p class="minValue" id="day1Min">${data.main.temp_min}</p>
+                     <p class="maxValue" id="day1Max">${data.list.main.temp_max}</p>
 
                  </div>
 
                  <div class="icons">
                     <p class="weather" id="day2"></p>
-                    <div class="image"><img src="" class="imgClass" id="img1" alt=""></div>
+                    <div class="image"><img src=${data.weather.icon} class="imgClass" id="img2" alt=""></div>
                     <p class="minValue" id="day2Min">Loading.....</p>
                     <p class="maxValue" id="day2Max">Loading.....</p>
 
@@ -37,7 +37,7 @@
 
                 <div class="icons">
                     <p class="weather" id="day3"></p>
-                    <div class="image"><img src="" class="imgClass" id="img1" alt=""></div>
+                    <div class="image"><img src=${data.weather.icon} class="imgClass" id="img3" alt=""></div>
                     <p class="minValue" id="day3Min">Loading.....</p>
                     <p class="maxValue" id="day3Max">Loading.....</p>
 
@@ -45,7 +45,7 @@
 
                 <div class="icons">
                     <p class="weather" id="day4"></p>
-                    <div class="image"><img src="" class="imgClass" id="img1" alt=""></div>
+                    <div class="image"><img src=${data.weather.icon} class="imgClass" id="img4" alt=""></div>
                     <p class="minValue" id="day4Min">Loading.....</p>
                     <p class="maxValue" id="day4Max">Loading.....</p>
 
@@ -53,7 +53,7 @@
 
                 <div class="icons">
                     <p class="weather" id="day5"></p>
-                    <div class="image"><img src="" class="imgClass" id="img1" alt=""></div>
+                    <div class="image"><img src=${data.weather.icon} class="imgClass" id="img5" alt=""></div>
                     <p class="minValue" id="day5Min">Loading.....</p>
                     <p class="maxValue" id="day5Max">Loading.....</p>
 
@@ -62,7 +62,7 @@
 
         </div>
        
-       
+        <script src="main.js"></script>
     </body>    
 
 
